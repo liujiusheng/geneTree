@@ -4,11 +4,11 @@
         <meta charset="utf-8">
         <title>基本图绘制</title>
         <link rel="stylesheet" href="main.css">
-        <script src="genTree.json"></script>
-        <script src="main.js"></script>
+        <script src="genTree.js"></script>
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
     </head>
     <body>
-        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="800" width="100%" viewBox="0 0 800 800">
+        <svg id="treeNode" xmlns="http://www.w3.org/2000/svg" version="1.1" height="800" width="100%" viewBox="0 0 800 800">
 			<!--三角形-->
             <polygon points="600,600 600,400 450,500" onclick="alert(222)" style="fill:#91C7AF;stroke:#C33531;stroke-width:1;fill-rule:evenodd;"/>
 			<!--圆-->
@@ -48,5 +48,6 @@
 			<rect x="20" y="100" rx="10" ry="10" width="20" height="20" style="fill:red;opacity:0.5"/>
 			<rect x="20" y="600" rx="20" ry="20" width="250" height="100" style="fill:red;opacity:0.5"/>
         </svg>
+		<script src="main.js"></script>
     </body>
 </html>

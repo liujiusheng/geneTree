@@ -1,0 +1,22 @@
+{
+  "name": "genetree",
+  "version": "1.0.0",
+  "description": "Draw gene tree.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liujiusheng/geneTree.git"
+  },
+  "author": "daliu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liujiusheng/geneTree/issues"
+  },
+  "homepage": "https://github.com/liujiusheng/geneTree#readme",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
