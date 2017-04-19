@@ -6,24 +6,28 @@
 var triangle = {};
 var treeNode = document.getElementById('treeNode');
 var html = '';
-var width = 200;
+var width = 200;//每一组的宽度
 var length = tree.length;
 for(var i=0;i<length;i++){
-	var x = 20+width*(i+1);
-	var length = tree[i].children.length;
-	var height = 10;
+	var eachRst = tree[i].children;//每一组染色体数据
+	var rst = {};
+	rst.x= 20+width*(i+1);
+	var length = eachRst.length;
+	var gyHeight = 10;//每个基因的高度
+	var gyWidth = 20;//每个基因的宽度
 	for(var k=0;k<length;k++){
-		var y = 120+height*(k+1);
-		html += '<rect x="'+x+'" y="'+y+'" width="20" height="'+height+'" style="fill:#91C7AF;stroke-width:1;stroke:#eee;"/>';
-		var children = tree[i].children[k].children;
-		var length = children.length;
+		var gyY = 120+gyHeight*(k+1);
+		html += '<rect x="'+rst.x+'" y="'+gyY+'" width="'+gyWidth+'" height="'+gyHeight+'" style="fill:#91C7AF;stroke-width:1;stroke:#eee;"/>';
+		var eachYZ = eachRst[k].children;//每一组因子
+		var length = eachYZ.length;
 		var first = 0;
+		var circlex = rst.x+100+gyWidth;console.log(circlex,rst.x+gyWidth);
+		html += '<line x1="'+(rst.x+gyWidth)+'" y1="'+(gyY+gyHeight/2)+'" x2="'+circlex+'" y2="'+gyY+'" style="stroke:rgb(99,99,99);stroke-width:1"/>';
 		for(var j=0;j<length;j++){
-			var circlex = x+100+(j+1)*10;
-			first = circlex;
-			html += '<circle cx="'+circlex+'" cy="'+y+'" r="5" fill="#C33531"/>';
+			html += '<circle cx="'+circlex+'" cy="'+gyY+'" r="5" fill="'+eachYZ[j].color+'"/>';
+			circlex = circlex+(j+1)*10;
 		}
-		html += '<line x1="'+x+'" y1="'+y+'" x2="'+circlex+'" y2="'+y+'" style="stroke:rgb(99,99,99);stroke-width:1"/>';
+		
 	}
 	
 }
