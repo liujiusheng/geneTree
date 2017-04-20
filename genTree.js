@@ -3,47 +3,111 @@ var tree= [
         "name":"第一条染色体",
         "id":"",
         "type":"",
-        "height":"",
-        "width":"",
         "color":"",
         "value":"",
-        "x":"",
-        "y":"",
         "children":[
                 {
                     "name":"第一段",
                     "id":"",
                     "type":"",
-                    "height":"",
-                    "width":"",
                     "color":"",
                     "value":"",
-                    "x":"",
-                    "y":"",
                     "children":[
                         {
                             "name":"第一个基因",
                             "id":"triangle",
                             "type":"",
-                            "height":"",
-                            "width":"",
                             "color":"red",
                             "value":"",
-                            "x":"",
-                            "y":"",
                             "r":""//外接圆绘三角形
                         },
                         {
                             "name":"第二个基因",
                             "id":"",
                             "type":"circle",
-                            "height":"",
-                            "width":"",
                             "color":"blue",
                             "value":"",
-                            "x":"",
-                            "y":"",
-                            "r":"10"
+                            "r":""//外接圆绘三角形
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"blue",
+                            "value":"",
+                            "r":""//外接圆绘三角形
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"blue",
+                            "value":"",
+                            "r":""//外接圆绘三角形
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"blue",
+                            "value":"",
+                            "r":""//外接圆绘三角形
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"blue",
+                            "value":"",
+                            "r":""//外接圆绘三角形
+                        },
+						{
+                            "name":"第一个基因",
+                            "id":"triangle",
+                            "type":"",
+                            "color":"red",
+                            "value":"",
+                            "r":""//外接圆绘三角形
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"blue",
+                            "value":"",
+                            "r":""//外接圆绘三角形
+                        },
+						{
+                            "name":"第一个基因",
+                            "id":"triangle",
+                            "type":"",
+                            "color":"red",
+                            "value":"",
+                            "r":""//外接圆绘三角形
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"blue",
+                            "value":"",
+                            "r":""//外接圆绘三角形
+                        },
+						{
+                            "name":"第一个基因",
+                            "id":"triangle",
+                            "type":"",
+                            "color":"yellow",
+                            "value":"",
+                            "r":""//外接圆绘三角形
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"yellow",
+                            "value":"",
+                            "r":""//外接圆绘三角形
                         }
                     ]
                 },
@@ -51,201 +115,367 @@ var tree= [
                     "name":"第二段",
                     "id":"",
                     "type":"",
-                    "height":"",
-                    "width":"",
                     "color":"",
                     "value":"",
-                    "x":"",
                     "y":"",
                     "children":[
 						{
                             "name":"第一个基因",
                             "id":"triangle",
                             "type":"",
-                            "height":"",
-                            "width":"",
                             "color":"red",
                             "value":"",
-                            "x":"",
-                            "y":"",
                             "r":""//外接圆绘三角形
                         },
                         {
                             "name":"第二个基因",
                             "id":"",
                             "type":"circle",
-                            "height":"",
-                            "width":"",
                             "color":"blue",
                             "value":"",
-                            "x":"",
-                            "y":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"green",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"green",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"blue",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"green",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"green",
+                            "value":"",
                             "r":"10"
                         }
                     ]
                 },
                 {
-                    "name":"第二段",
+                    "name":"第三段",
                     "id":"",
                     "type":"",
-                    "height":"",
-                    "width":"",
                     "color":"",
                     "value":"",
-                    "x":"",
-                    "y":"",
+                    "children":[
+						{
+                            "name":"第一个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"red",
+                            "value":"",
+                            "r":""//外接圆绘三角形
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"blue",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"blue",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"green",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"green",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"blue",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"green",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"green",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"blue",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"green",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"green",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"blue",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"green",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"green",
+                            "value":"",
+                            "r":"10"
+                        }
+                    ]
+                },
+                {
+                    "name":"第四段",
+                    "id":"",
+                    "type":"",
+                    "color":"",
+                    "value":"",
+                    "children":[
+						{
+                            "name":"第一个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"red",
+                            "value":"",
+                            "r":""//外接圆绘三角形
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"blue",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"green",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"green",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"blue",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"green",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"green",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"blue",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"green",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"green",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"blue",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"green",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"green",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"blue",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"green",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"green",
+                            "value":"",
+                            "r":"10"
+                        }
+                    ]
+                },
+                {
+                    "name":"第五段",
+                    "id":"",
+                    "type":"",
+                    "color":"",
+                    "value":"",
                     "children":[
 						{
                             "name":"第一个基因",
                             "id":"triangle",
                             "type":"",
-                            "height":"",
-                            "width":"",
                             "color":"red",
                             "value":"",
-                            "x":"",
-                            "y":"",
                             "r":""//外接圆绘三角形
                         },
                         {
                             "name":"第二个基因",
                             "id":"",
                             "type":"circle",
-                            "height":"",
-                            "width":"",
                             "color":"blue",
                             "value":"",
-                            "x":"",
-                            "y":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"green",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"green",
+                            "value":"",
                             "r":"10"
                         }
-                    ]
-                },
-                {
-                    "name":"第二段",
-                    "id":"",
-                    "type":"",
-                    "height":"",
-                    "width":"",
-                    "color":"",
-                    "value":"",
-                    "x":"",
-                    "y":"",
-                    "children":[
-
-                    ]
-                },
-                {
-                    "name":"第二段",
-                    "id":"",
-                    "type":"",
-                    "height":"",
-                    "width":"",
-                    "color":"",
-                    "value":"",
-                    "x":"",
-                    "y":"",
-                    "children":[
-
                     ]
                 }
-        ]
-    },
-    {
-        "name":"第二条染色体",
-        "id":"",
-        "type":"",
-        "height":"",
-        "width":"",
-        "color":"",
-        "value":"",
-        "x":"",
-        "y":"",
-        "children":[
-			{
-				"name":"第二段",
-				"id":"",
-				"type":"",
-				"height":"",
-				"width":"",
-				"color":"",
-				"value":"",
-				"x":"",
-				"y":"",
-				"children":[
-
-				]
-			},
-			{
-				"name":"第二段",
-				"id":"",
-				"type":"",
-				"height":"",
-				"width":"",
-				"color":"",
-				"value":"",
-				"x":"",
-				"y":"",
-				"children":[
-
-				]
-			},
-			{
-				"name":"第二段",
-				"id":"",
-				"type":"",
-				"height":"",
-				"width":"",
-				"color":"",
-				"value":"",
-				"x":"",
-				"y":"",
-				"children":[
-
-				]
-			},
-			{
-				"name":"第二段",
-				"id":"",
-				"type":"",
-				"height":"",
-				"width":"",
-				"color":"",
-				"value":"",
-				"x":"",
-				"y":"",
-				"children":[
-
-				]
-			}
-        ]
-    },
-    {
-        "name":"第三条染色体",
-        "id":"",
-        "type":"",
-        "height":"",
-        "width":"",
-        "color":"",
-        "value":"",
-        "x":"",
-        "y":"",
-        "children":[
-
-        ]
-    },
-    {
-        "name":"第四条染色体",
-        "id":"",
-        "type":"",
-        "height":"",
-        "width":"",
-        "color":"",
-        "value":"",
-        "x":"",
-        "y":"",
-        "children":[
-
         ]
     }
 ]
