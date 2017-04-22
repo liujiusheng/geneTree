@@ -1,3 +1,15 @@
+/**
+ * 数据说明：
+ * 所有数据都以json格式呈现，程序通过遍历json数据的形式绘制svg图像，格式如下
+ * 必需填写的字段有第二层的color
+ * 第三层的id,type,color,value,filter
+ * type有两种类型：circle和triangle，分别绘制成圆形和三角形
+ * color主要用于控制每个圆圈和三角形和左侧柱条每一段的颜色显示
+ * id则预留了为以后与后端交互时的唯一编码
+ * value为携带的数据
+ * filter为条件过滤时的分类
+ * 
+ */
 var tree= [
     {
         "name":"第一条染色体",
@@ -19,7 +31,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#006699",
                             "value":"2",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -27,7 +39,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B3DE69",
                             "value":"2",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -35,7 +47,7 @@ var tree= [
                             "type":"circle",
                             "color":"#FDB462",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -43,7 +55,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B7704C",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -51,7 +63,7 @@ var tree= [
                             "type":"circle",
                             "color":"#FB8072",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -59,7 +71,7 @@ var tree= [
                             "type":"circle",
                             "color":"#BC80BD",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -67,7 +79,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#FF3399",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -75,7 +87,7 @@ var tree= [
                             "type":"circle",
                             "color":"#80B1D3",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -83,7 +95,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#BEBADA",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -91,7 +103,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B3DE69",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -99,7 +111,7 @@ var tree= [
                             "type":"triangle",
                             "color":"yellow",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -107,7 +119,7 @@ var tree= [
                             "type":"circle",
                             "color":"yellow",
                             "value":"",
-                            
+                            "filter":"1" 
                         }
                     ]
                 },
@@ -125,7 +137,7 @@ var tree= [
                             "type":"triangle",
                             "color":"red",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -133,7 +145,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B7704C",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -141,7 +153,7 @@ var tree= [
                             "type":"circle",
                             "color":"#FB8072",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -149,7 +161,7 @@ var tree= [
                             "type":"circle",
                             "color":"#BC80BD",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -157,7 +169,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#FF3399",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -165,7 +177,7 @@ var tree= [
                             "type":"circle",
                             "color":"#80B1D3",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -173,7 +185,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#BEBADA",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -181,7 +193,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B3DE69",
                             "value":"",
-                            
+                            "filter":"1" 
                         }
                     ]
                 },
@@ -198,7 +210,7 @@ var tree= [
                             "type":"circle",
                             "color":"red",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -214,7 +226,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B7704C",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -222,7 +234,7 @@ var tree= [
                             "type":"circle",
                             "color":"#FB8072",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -230,7 +242,7 @@ var tree= [
                             "type":"circle",
                             "color":"#BC80BD",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -238,7 +250,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#FF3399",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -246,7 +258,7 @@ var tree= [
                             "type":"circle",
                             "color":"#80B1D3",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -254,7 +266,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#BEBADA",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -262,7 +274,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B3DE69",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -343,7 +355,7 @@ var tree= [
                             "type":"circle",
                             "color":"red",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -367,7 +379,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B7704C",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -375,7 +387,7 @@ var tree= [
                             "type":"circle",
                             "color":"#FB8072",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -383,7 +395,7 @@ var tree= [
                             "type":"circle",
                             "color":"#BC80BD",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -391,7 +403,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#FF3399",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -399,7 +411,7 @@ var tree= [
                             "type":"circle",
                             "color":"#80B1D3",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -407,7 +419,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#BEBADA",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -415,7 +427,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B3DE69",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -488,7 +500,7 @@ var tree= [
                             "type":"triangle",
                             "color":"red",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -529,7 +541,7 @@ var tree= [
                             "type":"circle",
                             "color":"red",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -553,7 +565,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B7704C",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -561,7 +573,7 @@ var tree= [
                             "type":"circle",
                             "color":"#FB8072",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -569,7 +581,7 @@ var tree= [
                             "type":"circle",
                             "color":"#BC80BD",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -577,7 +589,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#FF3399",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -585,7 +597,7 @@ var tree= [
                             "type":"circle",
                             "color":"#80B1D3",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -593,7 +605,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#BEBADA",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -601,7 +613,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B3DE69",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -683,7 +695,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#006699",
                             "value":"2",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -691,7 +703,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B3DE69",
                             "value":"2",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -699,7 +711,7 @@ var tree= [
                             "type":"circle",
                             "color":"#FDB462",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -707,7 +719,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B7704C",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -715,7 +727,7 @@ var tree= [
                             "type":"circle",
                             "color":"#FB8072",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -723,7 +735,7 @@ var tree= [
                             "type":"circle",
                             "color":"#BC80BD",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -731,7 +743,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#FF3399",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -739,7 +751,7 @@ var tree= [
                             "type":"circle",
                             "color":"#80B1D3",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -747,7 +759,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#BEBADA",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -755,7 +767,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B3DE69",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -763,7 +775,7 @@ var tree= [
                             "type":"triangle",
                             "color":"yellow",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -771,7 +783,7 @@ var tree= [
                             "type":"circle",
                             "color":"yellow",
                             "value":"",
-                            
+                            "filter":"1" 
                         }
                     ]
                 },
@@ -789,7 +801,7 @@ var tree= [
                             "type":"triangle",
                             "color":"red",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -797,7 +809,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B7704C",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -826,7 +838,7 @@ var tree= [
                             "type":"circle",
                             "color":"#80B1D3",
                             "value":"",
-                            
+                            "filter":"3" 
                         },
 						{
                             "name":"第一个基因",
@@ -834,7 +846,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#BEBADA",
                             "value":"",
-                            
+                            "filter":"3" 
                         },
                         {
                             "name":"第二个基因",
@@ -842,7 +854,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B3DE69",
                             "value":"",
-                            
+                            "filter":"2"                    
                         }
                     ]
                 },
@@ -859,7 +871,7 @@ var tree= [
                             "type":"circle",
                             "color":"red",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -875,7 +887,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B7704C",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -883,7 +895,7 @@ var tree= [
                             "type":"circle",
                             "color":"#FB8072",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -891,7 +903,7 @@ var tree= [
                             "type":"circle",
                             "color":"#BC80BD",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -899,7 +911,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#FF3399",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -907,7 +919,7 @@ var tree= [
                             "type":"circle",
                             "color":"#80B1D3",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -915,7 +927,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#BEBADA",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -923,7 +935,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B3DE69",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1004,7 +1016,7 @@ var tree= [
                             "type":"circle",
                             "color":"red",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1028,7 +1040,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B7704C",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1036,7 +1048,7 @@ var tree= [
                             "type":"circle",
                             "color":"#FB8072",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1044,7 +1056,7 @@ var tree= [
                             "type":"circle",
                             "color":"#BC80BD",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -1052,7 +1064,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#FF3399",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1060,7 +1072,7 @@ var tree= [
                             "type":"circle",
                             "color":"#80B1D3",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -1068,7 +1080,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#BEBADA",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1076,7 +1088,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B3DE69",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1149,7 +1161,7 @@ var tree= [
                             "type":"triangle",
                             "color":"red",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1190,7 +1202,7 @@ var tree= [
                             "type":"circle",
                             "color":"red",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1214,7 +1226,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B7704C",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1222,7 +1234,7 @@ var tree= [
                             "type":"circle",
                             "color":"#FB8072",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1230,7 +1242,7 @@ var tree= [
                             "type":"circle",
                             "color":"#BC80BD",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -1238,7 +1250,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#FF3399",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1246,7 +1258,7 @@ var tree= [
                             "type":"circle",
                             "color":"#80B1D3",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -1254,7 +1266,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#BEBADA",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1262,7 +1274,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B3DE69",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1336,7 +1348,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#006699",
                             "value":"2",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1344,7 +1356,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B3DE69",
                             "value":"2",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1352,7 +1364,7 @@ var tree= [
                             "type":"circle",
                             "color":"#FDB462",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1360,7 +1372,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B7704C",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1368,7 +1380,7 @@ var tree= [
                             "type":"circle",
                             "color":"#FB8072",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1376,7 +1388,7 @@ var tree= [
                             "type":"circle",
                             "color":"#BC80BD",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -1384,7 +1396,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#FF3399",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1392,7 +1404,7 @@ var tree= [
                             "type":"circle",
                             "color":"#80B1D3",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -1400,7 +1412,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#BEBADA",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1408,7 +1420,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B3DE69",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -1416,7 +1428,7 @@ var tree= [
                             "type":"triangle",
                             "color":"yellow",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1424,7 +1436,7 @@ var tree= [
                             "type":"circle",
                             "color":"yellow",
                             "value":"",
-                            
+                            "filter":"1" 
                         }
                     ]
                 },
@@ -1442,7 +1454,7 @@ var tree= [
                             "type":"triangle",
                             "color":"red",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1450,7 +1462,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B7704C",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1458,7 +1470,7 @@ var tree= [
                             "type":"circle",
                             "color":"#FB8072",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1466,7 +1478,7 @@ var tree= [
                             "type":"circle",
                             "color":"#BC80BD",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -1474,7 +1486,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#FF3399",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1482,7 +1494,7 @@ var tree= [
                             "type":"circle",
                             "color":"#80B1D3",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -1490,7 +1502,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#BEBADA",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1498,7 +1510,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B3DE69",
                             "value":"",
-                            
+                            "filter":"1" 
                         }
                     ]
                 },
@@ -1515,7 +1527,7 @@ var tree= [
                             "type":"circle",
                             "color":"red",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1531,7 +1543,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B7704C",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1539,7 +1551,7 @@ var tree= [
                             "type":"circle",
                             "color":"#FB8072",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1547,7 +1559,7 @@ var tree= [
                             "type":"circle",
                             "color":"#BC80BD",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -1555,7 +1567,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#FF3399",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1563,7 +1575,7 @@ var tree= [
                             "type":"circle",
                             "color":"#80B1D3",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -1571,7 +1583,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#BEBADA",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1579,7 +1591,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B3DE69",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1660,7 +1672,7 @@ var tree= [
                             "type":"circle",
                             "color":"red",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1684,7 +1696,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B7704C",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1692,7 +1704,7 @@ var tree= [
                             "type":"circle",
                             "color":"#FB8072",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1700,7 +1712,7 @@ var tree= [
                             "type":"circle",
                             "color":"#BC80BD",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -1708,7 +1720,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#FF3399",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1716,7 +1728,7 @@ var tree= [
                             "type":"circle",
                             "color":"#80B1D3",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -1724,7 +1736,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#BEBADA",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1732,7 +1744,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B3DE69",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1805,7 +1817,7 @@ var tree= [
                             "type":"triangle",
                             "color":"red",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1846,7 +1858,7 @@ var tree= [
                             "type":"circle",
                             "color":"red",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1870,7 +1882,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B7704C",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1878,7 +1890,7 @@ var tree= [
                             "type":"circle",
                             "color":"#FB8072",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1886,7 +1898,7 @@ var tree= [
                             "type":"circle",
                             "color":"#BC80BD",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -1894,7 +1906,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#FF3399",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1902,7 +1914,7 @@ var tree= [
                             "type":"circle",
                             "color":"#80B1D3",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -1910,7 +1922,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#BEBADA",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1918,7 +1930,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B3DE69",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -1992,7 +2004,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#006699",
                             "value":"2",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -2000,7 +2012,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B3DE69",
                             "value":"2",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -2008,7 +2020,7 @@ var tree= [
                             "type":"circle",
                             "color":"#FDB462",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -2016,7 +2028,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B7704C",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -2024,7 +2036,7 @@ var tree= [
                             "type":"circle",
                             "color":"#FB8072",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -2032,7 +2044,7 @@ var tree= [
                             "type":"circle",
                             "color":"#BC80BD",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -2040,7 +2052,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#FF3399",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -2048,7 +2060,7 @@ var tree= [
                             "type":"circle",
                             "color":"#80B1D3",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -2056,7 +2068,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#BEBADA",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -2064,7 +2076,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B3DE69",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -2072,7 +2084,7 @@ var tree= [
                             "type":"triangle",
                             "color":"yellow",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -2080,7 +2092,7 @@ var tree= [
                             "type":"circle",
                             "color":"yellow",
                             "value":"",
-                            
+                            "filter":"1" 
                         }
                     ]
                 },
@@ -2098,7 +2110,7 @@ var tree= [
                             "type":"triangle",
                             "color":"red",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -2106,7 +2118,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B7704C",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -2114,7 +2126,7 @@ var tree= [
                             "type":"circle",
                             "color":"#FB8072",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -2122,7 +2134,7 @@ var tree= [
                             "type":"circle",
                             "color":"#BC80BD",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -2130,7 +2142,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#FF3399",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -2138,7 +2150,7 @@ var tree= [
                             "type":"circle",
                             "color":"#80B1D3",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -2146,7 +2158,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#BEBADA",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -2154,7 +2166,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B3DE69",
                             "value":"",
-                            
+                            "filter":"1" 
                         }
                     ]
                 },
@@ -2171,7 +2183,7 @@ var tree= [
                             "type":"circle",
                             "color":"red",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -2187,7 +2199,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B7704C",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -2195,7 +2207,7 @@ var tree= [
                             "type":"circle",
                             "color":"#FB8072",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -2203,7 +2215,7 @@ var tree= [
                             "type":"circle",
                             "color":"#BC80BD",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -2211,7 +2223,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#FF3399",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -2219,7 +2231,7 @@ var tree= [
                             "type":"circle",
                             "color":"#80B1D3",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -2227,7 +2239,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#BEBADA",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -2235,7 +2247,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B3DE69",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -2316,7 +2328,7 @@ var tree= [
                             "type":"circle",
                             "color":"red",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -2340,7 +2352,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B7704C",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -2348,7 +2360,7 @@ var tree= [
                             "type":"circle",
                             "color":"#FB8072",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -2356,7 +2368,7 @@ var tree= [
                             "type":"circle",
                             "color":"#BC80BD",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -2364,7 +2376,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#FF3399",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -2372,7 +2384,7 @@ var tree= [
                             "type":"circle",
                             "color":"#80B1D3",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -2380,7 +2392,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#BEBADA",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -2388,7 +2400,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B3DE69",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -2461,7 +2473,7 @@ var tree= [
                             "type":"triangle",
                             "color":"red",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -2502,7 +2514,7 @@ var tree= [
                             "type":"circle",
                             "color":"red",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -2526,7 +2538,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B7704C",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -2534,7 +2546,7 @@ var tree= [
                             "type":"circle",
                             "color":"#FB8072",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -2542,7 +2554,7 @@ var tree= [
                             "type":"circle",
                             "color":"#BC80BD",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -2550,7 +2562,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#FF3399",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -2558,7 +2570,7 @@ var tree= [
                             "type":"circle",
                             "color":"#80B1D3",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
 						{
                             "name":"第一个基因",
@@ -2566,7 +2578,7 @@ var tree= [
                             "type":"triangle",
                             "color":"#BEBADA",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
@@ -2574,7 +2586,7 @@ var tree= [
                             "type":"circle",
                             "color":"#B3DE69",
                             "value":"",
-                            
+                            "filter":"1" 
                         },
                         {
                             "name":"第二个基因",
