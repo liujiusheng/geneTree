@@ -22,8 +22,10 @@ var tree= [
                     "name":"第一段",
                     "id":"1",
                     "type":"2",
-                    "color":"#B3DE69",
+                    "color":"#797677",
                     "value":"3",
+                    "height":30,
+                    "width":15,
                     "children":[
                         {
                             "name":"第一个基因",
@@ -127,9 +129,10 @@ var tree= [
                     "name":"第二段",
                     "id":"",
                     "type":"",
-                    "color":"",
-                    "value":"#B7704C",
-                    "y":"",
+                    "color":"#B7704C",
+                    "value":"",
+                    "height":"10",
+                    "width":"15",
                     "children":[
 						{
                             "name":"第一个基因",
@@ -201,8 +204,10 @@ var tree= [
                     "name":"第三段",
                     "id":"",
                     "type":"",
-                    "color":"#B7704C",
+                    "color":"#797677",
                     "value":"",
+                    "height":"8",
+                    "width":"15",
                     "children":[
 						{
                             "name":"第一个基因",
@@ -346,8 +351,10 @@ var tree= [
                     "name":"第四段",
                     "id":"",
                     "type":"",
-                    "color":"red",
+                    "color":"#C8D7DE",
                     "value":"",
+                    "height":"10",
+                    "width":"15",
                     "children":[
 						{
                             "name":"第一个基因",
@@ -491,8 +498,10 @@ var tree= [
                     "name":"第五段",
                     "id":"",
                     "type":"",
-                    "color":"#FF3399",
+                    "color":"#FFFAFA",
                     "value":"",
+                    "height":"10",
+                    "width":"10",
                     "children":[
 						{
                             "name":"第一个基因",
@@ -532,8 +541,157 @@ var tree= [
                     "name":"第六段",
                     "id":"",
                     "type":"",
-                    "color":"#B7704C",
+                    "color":"#C8D7DE",
                     "value":"",
+                    "height":"4",
+                    "width":"15",
+                    "children":[
+						{
+                            "name":"第一个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"red",
+                            "value":"",
+                            "filter":"1" 
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"blue",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"green",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"#B7704C",
+                            "value":"",
+                            "filter":"1" 
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"#FB8072",
+                            "value":"",
+                            "filter":"1" 
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"#BC80BD",
+                            "value":"",
+                            "filter":"1" 
+                        },
+						{
+                            "name":"第一个基因",
+                            "id":"",
+                            "type":"triangle",
+                            "color":"#FF3399",
+                            "value":"",
+                            "filter":"1" 
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"#80B1D3",
+                            "value":"",
+                            "filter":"1" 
+                        },
+						{
+                            "name":"第一个基因",
+                            "id":"",
+                            "type":"triangle",
+                            "color":"#BEBADA",
+                            "value":"",
+                            "filter":"1" 
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"#B3DE69",
+                            "value":"",
+                            "filter":"1" 
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"green",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"blue",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"green",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"green",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"blue",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"green",
+                            "value":"",
+                            "r":"10"
+                        },
+                        {
+                            "name":"第二个基因",
+                            "id":"",
+                            "type":"circle",
+                            "color":"green",
+                            "value":"",
+                            "r":"10"
+                        }
+                    ]
+                },
+                {
+                    "name":"第七段",
+                    "id":"",
+                    "type":"",
+                    "color":"#AFB1B4",
+                    "value":"",
+                    "height":"10",
+                    "width":"15",
                     "children":[
 						{
                             "name":"第一个基因",
@@ -688,6 +846,8 @@ var tree= [
                     "type":"2",
                     "color":"#B3DE69",
                     "value":"3",
+                    "height":"10",
+                    "width":"15",
                     "children":[
                         {
                             "name":"第一个基因",
@@ -791,9 +951,10 @@ var tree= [
                     "name":"第二段",
                     "id":"",
                     "type":"",
-                    "color":"",
-                    "value":"#B7704C",
-                    "y":"",
+                    "color":"#B7704C",
+                    "value":"",
+                    "height":"2",
+                    "width":"15",
                     "children":[
 						{
                             "name":"第一个基因",
@@ -864,6 +1025,8 @@ var tree= [
                     "type":"",
                     "color":"#B7704C",
                     "value":"",
+                    "height":"18",
+                    "width":"15",
                     "children":[
 						{
                             "name":"第一个基因",
@@ -1009,6 +1172,8 @@ var tree= [
                     "type":"",
                     "color":"red",
                     "value":"",
+                    "height":"10",
+                    "width":"15",
                     "children":[
 						{
                             "name":"第一个基因",
@@ -1154,6 +1319,8 @@ var tree= [
                     "type":"",
                     "color":"#FF3399",
                     "value":"",
+                    "height":"10",
+                    "width":"15",
                     "children":[
 						{
                             "name":"第一个基因",
@@ -1195,6 +1362,8 @@ var tree= [
                     "type":"",
                     "color":"#B7704C",
                     "value":"",
+                    "height":"10",
+                    "width":"15",
                     "children":[
 						{
                             "name":"第一个基因",
@@ -1341,6 +1510,8 @@ var tree= [
                     "type":"2",
                     "color":"#B3DE69",
                     "value":"3",
+                    "height":"10",
+                    "width":"15",
                     "children":[
                         {
                             "name":"第一个基因",
@@ -1444,9 +1615,10 @@ var tree= [
                     "name":"第二段",
                     "id":"",
                     "type":"",
-                    "color":"",
-                    "value":"#B7704C",
-                    "y":"",
+                    "color":"#B7704C",
+                    "value":"",
+                    "height":"10",
+                    "width":"15",
                     "children":[
 						{
                             "name":"第一个基因",
@@ -1520,6 +1692,8 @@ var tree= [
                     "type":"",
                     "color":"#B7704C",
                     "value":"",
+                    "height":"10",
+                    "width":"15",
                     "children":[
 						{
                             "name":"第一个基因",
@@ -1665,6 +1839,8 @@ var tree= [
                     "type":"",
                     "color":"red",
                     "value":"",
+                    "height":"10",
+                    "width":"15",
                     "children":[
 						{
                             "name":"第一个基因",
@@ -1810,6 +1986,8 @@ var tree= [
                     "type":"",
                     "color":"#FF3399",
                     "value":"",
+                    "height":"10",
+                    "width":"15",
                     "children":[
 						{
                             "name":"第一个基因",
@@ -1851,6 +2029,8 @@ var tree= [
                     "type":"",
                     "color":"#B7704C",
                     "value":"",
+                    "height":"10",
+                    "width":"15",
                     "children":[
 						{
                             "name":"第一个基因",
@@ -1997,6 +2177,8 @@ var tree= [
                     "type":"2",
                     "color":"#B3DE69",
                     "value":"3",
+                    "height":"10",
+                    "width":"15",
                     "children":[
                         {
                             "name":"第一个基因",
@@ -2100,9 +2282,10 @@ var tree= [
                     "name":"第二段",
                     "id":"",
                     "type":"",
-                    "color":"",
-                    "value":"#B7704C",
-                    "y":"",
+                    "color":"#B7704C",
+                    "value":"",
+                    "height":"10",
+                    "width":"15",
                     "children":[
 						{
                             "name":"第一个基因",
@@ -2176,6 +2359,8 @@ var tree= [
                     "type":"",
                     "color":"#B7704C",
                     "value":"",
+                    "height":"10",
+                    "width":"15",
                     "children":[
 						{
                             "name":"第一个基因",
@@ -2321,6 +2506,8 @@ var tree= [
                     "type":"",
                     "color":"red",
                     "value":"",
+                    "height":"10",
+                    "width":"15",
                     "children":[
 						{
                             "name":"第一个基因",
@@ -2466,6 +2653,8 @@ var tree= [
                     "type":"",
                     "color":"#FF3399",
                     "value":"",
+                    "height":"10",
+                    "width":"15",
                     "children":[
 						{
                             "name":"第一个基因",
@@ -2507,6 +2696,8 @@ var tree= [
                     "type":"",
                     "color":"#B7704C",
                     "value":"",
+                    "height":"10",
+                    "width":"15",
                     "children":[
 						{
                             "name":"第一个基因",
